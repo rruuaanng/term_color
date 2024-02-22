@@ -1,6 +1,6 @@
 # term_color
 
-积极开发中...
+积极开发中...  
 Actively developing
 
 ## demand(需求)  
