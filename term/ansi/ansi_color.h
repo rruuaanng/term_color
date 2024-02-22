@@ -1,8 +1,6 @@
 #ifndef _TERM_COLOR_H
 #define _TERM_COLOR_H
 
-#include <stdio.h>
-
 #define S_ULINE "\e[4m"
 #define E_ULINE "\e[24m"
 #define RESET "\e[0m"
@@ -30,17 +28,6 @@ enum bg_color
     BG_CYAN,
     BG_WHITE,
 };
-
-#define __get_color(x) ({ \
-    int _c2 = x;          \
-    _c2;                  \
-})
-
-#define __color(x) ({                       \
-    char _c1[6];                            \
-    sprintf(_c1, "\e[%dm", __get_color(x)); \
-    _c1;                                    \
-})
 
 int print_color(enum font_color color,
                 const char *fmt, ...);
